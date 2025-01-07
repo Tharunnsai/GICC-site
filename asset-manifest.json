@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/GICC/static/css/main.2b890c1b.css",
+    "main.js": "/GICC/static/js/main.d0108286.js",
+    "index.html": "/GICC/index.html",
+    "main.2b890c1b.css.map": "/GICC/static/css/main.2b890c1b.css.map",
+    "main.d0108286.js.map": "/GICC/static/js/main.d0108286.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b890c1b.css",
+    "static/js/main.d0108286.js"
+  ]
+}
