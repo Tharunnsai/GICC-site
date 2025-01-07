@@ -1,0 +1,85 @@
+/* Tournaments.css */
+
+.tournament-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1e3a8a; /* Blue color for authenticity */
+  }
+  
+  .tournament-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .tournament-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .tournament-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .tournament-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .tournament-title {
+    font-size: 1.5rem;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+  }
+  
+  .tournament-detail {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .register-button {
+    background-color: #10b981; /* Green for a positive action */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #059669;
+  }
+  
+  .register-button.disabled {
+    background-color: #d1d5db; /* Greyed out for disabled state */
+    cursor: not-allowed;
+  }
+  
+  .no-tournaments {
+    font-size: 1rem;
+    color: #555;
+  }
+  

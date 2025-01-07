@@ -1,0 +1,171 @@
+/* General Styling for About Page */
+.about-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333; /* Default text color for non-heading text */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About Section */
+.about-section {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Updated text color for headings */
+    text-transform: uppercase;
+}
+
+.about-description {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Subscribe Section */
+.subscribe-section {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subscribe-card:hover {
+    transform: translateY(-10px); /* Slight bulge effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-card h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333; /* Updated text color for headings */
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input[type="email"] {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 1rem;
+    color: #333; /* Default text color */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="email"]:focus {
+    border-color: #333;
+    outline: none;
+    box-shadow: 0 0 8px #340(30, 58, 138, 0.5); /* Updated box-shadow color */
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight scale up effect */
+    box-shadow: 0 6px 12px rgba(30, 58, 138, 0.2); /* Updated box-shadow color */
+}
+
+.subscribe-message {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.error-message {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+/* Contact Section */
+.contact-section {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; /* Updated text color for headings */
+    text-transform: uppercase;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.contact-section a {
+    color: #1e3a8a; /* Updated text color for headings */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-section a:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .subscribe-card {
+        padding: 20px;
+    }
+
+    input[type="email"] {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    .contact-section h2 {
+        font-size: 1.8rem;
+    }
+}

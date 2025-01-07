@@ -1,0 +1,76 @@
+/* Navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222; /* Dark background */
+    color: white;
+    z-index: 1000; /* Ensure it stays on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links li {
+    padding: 5px 10px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: color 0.5s ease-in-out;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #059669; /* Gold color on hover */
+}
+
+/* Active link styles */
+.nav-link.about-active,
+.nav-link.tournaments-active {
+    color: #059669; /* Gold for active links */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .logo img {
+        width: 30px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+}
